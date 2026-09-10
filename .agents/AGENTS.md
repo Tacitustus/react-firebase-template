@@ -1,6 +1,7 @@
 ### コーディング規約
 - TypeScript 厳格モード（strict: true）
 - any 型の使用は一切禁止。unknown + 型ガードを用いること
+- eslint-disable-next-line 等によるLint警告の無視は一切禁止。エラーは根本から解決すること
 - 関数はすべてアロー関数で定義する（export const MyComponent = () => {} 形式）
 - コメントは処理単位で非常に細かく親切に日本語で書く
   例: // ユーザー一覧を取得し、アクティブなユーザーのみをフィルタリングする
@@ -52,6 +53,7 @@
 
    ### コーディング規約チェック（AGENTS.md）
    - ✅ any 未使用
+   - ✅ eslint-disable-next-line 未使用
    - ✅ アロー関数のみ使用
    - ✅ JSDoc 記述済み
    - ✅ 日本語コメント記述済み
